@@ -1,0 +1,14 @@
+html.wp-toolbar {
+padding-top: 0;
+}
+
+#adminmenuback, #adminmenuwrap, #wpadminbar, #screen-meta, #screen-meta-links, #footer, #preview-action, #save-action, #misc-publishing-actions, #delete-action, #minor-publishing {
+display:none;
+}
+
+#wpbody-content {
+padding-bottom: 0;
+}
+#wpcontent, #footer {
+margin-left: 15px;
+}

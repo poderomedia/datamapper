@@ -1,0 +1,35 @@
+// basic
+
+$font-size-base: 13px; 
+$font-family-primary: gotham, Arial, sans-serif;
+
+// grid
+
+$grid-columns: 16;  // number of columns
+$grid-width: 1120px; // width grid
+$grid-gutter-width: 20px; // width inter columns
+
+// media queries
+
+$xs-screen: 480px; // Extra small screen / phone
+$s-screen: 768px; // Small screen / tablet
+$m-screen: 992px; // Medium screen / desktop
+$l-screen: $grid-width; // Large screen / wide desktop
+
+
+$transition: .2s ease-in-out;
+
+$color-body: #797979;
+$color-bg-main: #f3f3f3;
+
+$color-primary: #da0000;
+$color-secondary: #545454;
+$color-success: #2ecc71;
+
+$color-title: #292929;
+
+$row-module: 30px;
+
+$logo-url: url(../images/tmp/logo.png);
+$logo-width: 150px;
+$logo-height: 40px;

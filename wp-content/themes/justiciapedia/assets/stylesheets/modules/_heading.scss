@@ -1,0 +1,86 @@
+.heading {
+	hr {
+		background: white;
+		width: 30px;
+		height: 3px;
+		+ h1 {
+			margin-top: 20px;
+		}
+	}
+	h1 {
+		font-size: em(36px);
+		font-weight: bold;
+	}
+	h2, h3 {
+		font-size: em(25px);
+		line-height: 1.3em;
+	}
+	h3 {
+		font-weight: bold;
+		+ p {
+			margin: 10px 0 0 0;
+		}
+	}
+	p {
+		font-size: em(15px);
+		line-height: 1.5em;
+	}
+	> i {
+		color: $color-primary;
+		&.icon-32 {
+			margin: 0 auto 20px;
+		}
+	}
+	&.heading-center {
+		hr {
+			margin: 0 auto;
+		}
+		text-align: center;
+	}
+	.heading-actions {
+		padding: 20px 0 0 0;
+	}
+	@include breakpoint($max, $m-screen) {
+		h1 {
+			font-size: em(25px);
+			line-height: 1.3em;
+		}
+		h2, h3 {
+			font-size: em(18px);
+			line-height: 1.5em;
+		}
+	}
+}
+
+.heading-min {
+	border-bottom: 1px solid darken($color-bg-main, 5%);
+	color: lighten($color-body, 20%);
+	margin: 0 0 20px;
+	h6 {
+		font-weight: bold;
+		font-size: em(13px);
+		text-transform: uppercase;
+		padding: 0 0 5px;
+	}
+}
+
+.section-title {
+	.btn-group.right {
+		margin: 0 0 20px 20px;
+	}
+	label {
+		display: block;
+		line-height: 1.3em;
+		font-weight: 300;
+		padding: 15px 0 0 0;
+	}
+	h1 {
+		font-size: em(36px);
+		line-height: 1.3em;
+		font-weight: bold;
+		color: $color-primary;
+		@include breakpoint($max, $m-screen) {
+			font-size: em(24px);
+		}
+	}
+}

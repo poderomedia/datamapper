@@ -1,0 +1,29 @@
+.text {
+	font-size: (16px);
+	p {
+		line-height: 1.5em;
+		margin: 0 0 30px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	ul, ol {
+		margin: 0 0 30px 30px;
+		li {
+			line-height: 1.5em;
+		}
+	}
+	ul li {
+		list-style-type: disc;
+	}
+	ol li {
+		list-style-type: decimal;
+	}
+	blockquote {
+		font-size: em(24px, 16px);
+		color: $color-primary;
+	}
+	a {
+		@extend .link-primary;
+	}
+}

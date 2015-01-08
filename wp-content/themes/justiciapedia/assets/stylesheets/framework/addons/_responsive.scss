@@ -1,0 +1,20 @@
+.visible-l { }
+.visible-m { }
+.visible-x { }
+.visible-xs { }
+
+.hidden-l { }
+.hidden-m { }
+.hidden-x { }
+.hidden-xs { }
+
+@include breakpoint($min, $m-screen) {
+	.visible-m {
+		display: none !important;
+	}
+}
+@include breakpoint($max, $m-screen) {
+	.hidden-m {
+		display: none !important;
+	}
+}

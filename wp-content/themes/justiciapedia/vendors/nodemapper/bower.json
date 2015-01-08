@@ -1,0 +1,33 @@
+{
+  "name": "nodemapper",
+  "version": "0.2.6",
+  "authors": [
+    "Gregorio Moreno <gregorio@masega.co>",
+    "Pablo Navarro <pablo@masega.co>"
+  ],
+  "description": "Network Chart",
+  "main": "index.md",
+  "keywords": [
+    "elections",
+    "candidates",
+    "panama"
+  ],
+  "license": "MIT",
+  "homepage": "www.github.com/poderopedia",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.2",
+    "font-awesome": "~4.0.3",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}

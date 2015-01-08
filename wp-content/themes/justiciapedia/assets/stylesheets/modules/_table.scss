@@ -1,0 +1,39 @@
+table {
+	width: 100%;
+	margin: 0 0 ($row-module * 2);
+	@include breakpoint($max, $m-screen) {
+		margin: 0 0 30px;
+	}
+	@include breakpoint($max, $xs-screen) {
+		margin: 0 0 20px;
+	}
+	a {
+		@extend .link-primary;
+		font-weight: normal;
+	}
+	tbody {
+		tr {
+			&:first-child {
+				td {
+					padding-top: 0;
+				}
+			}
+			&:last-child {
+				td {
+					padding-bottom: 0;
+				}
+			}
+			td {
+				padding: 8px 20px;
+				border-right: 1px solid darken($color-bg-main, 5%);
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+					border-right: none;
+				}
+			}
+		}
+	}
+}

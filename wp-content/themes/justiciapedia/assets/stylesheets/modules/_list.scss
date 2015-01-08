@@ -1,0 +1,108 @@
+.people-list {
+	position: relative;
+	margin: -10px 0;
+	.col4 {
+		padding: 10px;
+		@include breakpoint($max, $s-screen) {
+			width: column-flex(8);
+		}
+		@include breakpoint($max, $xs-screen) {
+			width: column-flex(16);
+		}
+	}
+	.more {
+		a {
+			position: relative;
+			display: block;
+			background: $color-secondary;
+			font-weight: bold;
+			font-size: em(24px);
+			color: white;
+			height: 200px;
+			@include transition(background $transition);
+			h6 {
+				@include position(absolute, 50% 0px 0 0px);
+				display: block;
+				text-align: center;
+				padding: 3px 20px 0 20px;
+				height: 40px - 3px;
+				margin: -20px 0;
+			}
+			
+			span {
+				display: block;
+				color: $color-body;
+				font-size: em(13px, 24px);
+				padding: 2px 0 0 0;
+				font-weight: 300;
+			}
+			&:hover {
+				background: darken($color-secondary, 10%);
+			}
+		}
+	}
+	.people {
+		a {
+			text-align: center;
+			display: block;
+			background: white;
+			padding: 40px 15px;
+			color: inherit;
+			@include transition(box-shadow $transition);
+			@extend .article-format;
+			figure {
+				@extend figure.avatar;
+				width: 98px;
+				height: 98px;
+				margin: 0 auto 20px;
+			}
+			hr {
+				background: darken($color-bg-main, 20%);
+				width: 10px;
+				height: 1px;
+				margin: 10px auto;
+			}
+			&:hover {
+				@include prefix(box-shadow, rgba(black, .07) 0 0 15px 3px);
+				figure {
+					border-color: $color-primary;
+					&:after {
+						content: "";
+						border: 2px solid white;
+						@include position(absolute, 0px 0px 0px 0px);
+						@include prefix(border-radius, 50%);
+						z-index: 1;
+					}
+				}
+			}
+			@include breakpoint($max, $xs-screen) {
+				padding: 20px;
+				figure {
+					margin: 0 auto 10px;
+				}
+				hr {
+					margin: 5px auto;
+				}
+			}
+		}
+	}
+}
+
+.archive {
+	.col14 {
+		float: none;
+	}
+	article {
+		margin: 0 0 $row-module;
+		&:last-child {
+			margin: 0;
+		}
+		@extend .article-format;
+		a {
+			@extend .link-primary;
+		}
+		figure {
+			@extend figure.avatar;
+		}
+	}
+}

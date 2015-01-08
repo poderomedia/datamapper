@@ -1,0 +1,10 @@
+@include font-face(gotham, "../fonts/gotham/gothambook", normal);
+@include font-face(gotham, "../fonts/gotham/gothambookitalic", normal, oblique);
+@include font-face(gotham, "../fonts/gotham/gothammedium", 300);
+@include font-face(gotham, "../fonts/gotham/gothammediumitalic", 300, oblique);
+@include font-face(gotham, "../fonts/gotham/gothambold", bold);
+@include font-face(gotham, "../fonts/gotham/gothambookitalic", bold, oblique);
+
+@include font-face('Flaticons Solid', "../fonts/flaticons/flaticons-solid");
+@include font-face('Flaticons Social', "../fonts/flaticons/flaticons-social");
+@include font-face('Flaticons Stroke', "../fonts/flaticons/flaticons-stroke");

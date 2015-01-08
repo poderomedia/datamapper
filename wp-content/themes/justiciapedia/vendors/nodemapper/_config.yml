@@ -1,0 +1,17 @@
+# Jekyll Configuration
+safe: true
+markdown: rdiscount
+pigments: true
+permalink: pretty
+exclude:
+    - bower_components
+    - node_modules
+    - Gruntfile.js
+    - bower.json
+    - package.json
+    - README.md
+
+# Site
+name: NodeMapper
+baseurl: http://poderomedia.github.io/nodemapper
+github: http://github.com/poderomedia/nodemapper.git

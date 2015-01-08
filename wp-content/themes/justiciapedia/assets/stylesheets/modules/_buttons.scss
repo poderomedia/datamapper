@@ -1,0 +1,121 @@
+.btn {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	line-height: 32px;
+	font-weight:bold;
+	font-size: em(13px);
+	padding: 0 10px;
+	@include prefix(border-radius, 3px);
+	@include transition(background-color $transition, color $transition);
+	white-space: nowrap;
+	i {
+		float: left;
+		margin: 7px 7px 0 0; 
+	}
+	&.only-icon {
+		display: block;
+		width: 30px;
+		height: 30px;
+		padding: 0  !important;
+		text-indent: -9999em;
+		overflow: hidden;
+		i {
+			@include position(absolute, 50% 0 0 50%);
+			margin: -8px !important;
+		}
+	}
+	&.active {
+		@include prefix(box-shadow, inset rgba(black, .1) 0 0 3px 0);
+	}
+	&.btn-default {
+		background: white;
+		color: $color-title;
+		&:hover {
+			
+		}
+		&.active {
+			color: white;
+			background: darken($color-bg-main, 15%);
+		}
+	}
+	&.btn-primary {
+		background: $color-primary;
+		color: white;
+		&:hover {
+			background: darken($color-primary, 5%);
+		}
+	}
+	&.btn-success {
+		background: $color-success;
+		color: white;
+		&:hover {
+			background: darken($color-success, 5%);
+		}
+	}
+	&.btn-info {}
+	&.btn-warning {}
+	&.btn-danger {}
+	&.btn-link {}
+	&.btn-xs {
+		height: 22px;
+		line-height: 22px;
+		padding: 0 5px;
+		text-transform: none;
+		i {
+			margin:2px 2px 0 0;
+		}
+		&.only-icon {
+			width: 22px;
+			height: 22px;
+		}
+	}
+	&.btn-l {
+		height: 50px;
+		line-height: 50px;
+		padding: 0 20px;
+	}
+	&.btn-full {
+		width: 100%;
+		font-size: em(16px);
+		text-align: center;
+		@include prefix(box-sizing, border-box);
+	}
+
+}
+.btn-collapse {
+	position: relative;
+	display: block;
+	i {
+		display: block;
+		width: 16px;
+		height: 16px;
+		font-size: 16px;
+		&:before {
+			@extend .flaticon:before;
+			font-family: 'Flaticons Stroke';
+			content: "\e5b7";
+		}
+	}
+	&.collapsed {
+		i:before {
+			content: "\e53e";
+		}
+	}
+}
+
+.btn-group {
+	display: inline-block;
+	.btn {
+		float: left;
+		margin: 0;
+		@include prefix(border-radius, 0px 0px 0px 0px);
+		&:last-child {
+			@include prefix(border-radius, 0px 3px 3px 0px);
+		}
+		&:first-child {
+			@include prefix(border-radius, 3px 0px 0px 3px);
+		}
+	}
+}

@@ -1,0 +1,54 @@
+figure.avatar {
+	position: relative;
+	@include prefix(border-radius, 50%);
+	border: 1px solid transparent;
+	@include transition(border-color $transition);
+	overflow: hidden;
+	img {
+		position: relative;
+		max-width: 100%;
+		display: block;
+		z-index: 0;
+	}
+}
+
+.article-format {
+	h4 {
+		font-size: em(16px);
+		font-weight: bold;
+		color: $color-title;
+		line-height: 1.5em;
+	}
+	h5 {
+		font-size: em(14px);
+		line-height: 1.5em;
+		span {
+			color: $color-primary;
+			font-weight: 300;
+		}
+	}
+	h6 {
+		font-size: em(13px);
+		line-height: 1.5em;
+	}
+	p {
+		line-height: 1.5em;
+		margin: 15px 0 0;
+	}
+	time {
+		line-height: 1.5em;
+		font-size: em(11px);
+		margin: 0 0 3px;
+		color: lighten($color-body, 20%);
+		font-weight: 300;
+	}
+}
+
+.link-primary {
+  color: $color-primary;
+  font-weight: 300;
+  @include transition(color $transition);
+  &:hover {
+    color: $color-body;
+  }
+}
